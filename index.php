@@ -11,7 +11,6 @@ createTabelUsers($conn);
 ?>
 
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
@@ -31,7 +30,6 @@ createTabelUsers($conn);
         </ul>
     </nav>
 
-
     <div class="imageDiv">
         <div class="text-block">
             <h2>HomePage</h2>
@@ -40,20 +38,17 @@ createTabelUsers($conn);
     </div>
 
     <main>
-
         <h3 style="text-decoration: overline; text-align: center;">Highlights </h3>
         <br>
 
         <div class="row">
 
             <?php
-
             $stmt = $conn->prepare("SELECT * FROM products order by idProd limit 0,4");
             $stmt->execute();
             $result = $stmt->get_result();
 
             if ($result->num_rows === 0) exit('No products.');
-
             while ($row = $result->fetch_assoc()) {
 
                 $idProd = $row["idProd"];
@@ -75,7 +70,6 @@ createTabelUsers($conn);
         </div>
 
     </main>
-
 </body>
 
 </html>

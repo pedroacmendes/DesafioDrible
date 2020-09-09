@@ -21,18 +21,18 @@ include 'style.php';
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="index.php">HomePage</a>
+        <a class="nav-link" href="../index.php">HomePage</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="products.php">Products</a>
+        <a class="nav-link" href="../products.php">Products</a>
       </li>
     </ul>
     <ul class="navbar-nav justify-content-end">
       <li class="nav-item">
-        <a class="nav-link" href="login.php">Login</a>
+        <a class="nav-link" href="../login.php">Login</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="register.php">Register</a>
+        <a class="nav-link" href="../register.php">Register</a>
       </li>
     </ul>
   </nav>
